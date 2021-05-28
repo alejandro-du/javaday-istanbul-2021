@@ -4,38 +4,38 @@ class AnimatedAvatar extends HTMLElement {
 
 		this.attachShadow({ mode: "open" });
 		this.shadowRoot.innerHTML = `
-					<style>
-						html {
-							background-color: darkslategrey;
-							color: white;
-						}
+			<style>
+				html {
+					background-color: darkslategrey;
+					color: white;
+				}
 
-						span {
-							font-style: italic;
-						}
+				span {
+					font-style: italic;
+				}
 
-						.container {
-							border: 1px solid darkgray;
-							margin: 1em;
-							padding: 1em;
-						}
+				.container {
+					border: 1px solid darkgray;
+					margin: 1em;
+					padding: 1em;
+					text-align: center;
+				}
 
-						.container img {
-							width: 100%;
-						}
+				.container img {
+					width: 100%;
+				}
 
-						.animated {
-							transform: rotate(360deg);
-							transition-duration: 1s;
-						}
-					</style>
-					<div class="container">
-						<span id="span"></span>
-						<img id = "img" src="">
-						<slot id="footer"></slot>
-					</div>
-				`;
-
+				.animated {
+					transform: rotate(360deg);
+					transition-duration: 1s;
+				}
+			</style>
+			<div class="container">
+				<span id="span"></span>
+				<img id = "img" src="">
+				<slot id="footer"></slot>
+			</div>
+		`;
 	}
 
 	connectedCallback() {

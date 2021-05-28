@@ -8,9 +8,12 @@ import com.vaadin.flow.component.dependency.JsModule;
 @Tag("animated-avatar")
 public class AnimatedAvatar extends Component {
 
-  public AnimatedAvatar(String title, String image) {
+  public AnimatedAvatar(String title, String image, Component footer) {
     getElement().setAttribute("title", title);
     getElement().setAttribute("image", image);
+    
+    footer.getElement().setAttribute("name", "footer");
+    getElement().appendChild(footer.getElement());
   }
   
   

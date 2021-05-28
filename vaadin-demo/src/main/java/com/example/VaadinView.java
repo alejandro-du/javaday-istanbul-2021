@@ -19,7 +19,8 @@ public class VaadinView extends VerticalLayout {
         new H1("Hello!"),
         new Paragraph("This is a Web Component"),
         new AnimatedAvatar("Java Day Istanbul",
-            "https://static.wixstatic.com/media/caeeb8_273cbe181f304dc5846b217719ddcfed~mv2.png/v1/crop/x_0,y_667,w_3508,h_1182/fill/w_928,h_312,al_c,q_85,usm_0.66_1.00_0.01/beyaz-01-01.webp"),
+            "https://static.wixstatic.com/media/caeeb8_273cbe181f304dc5846b217719ddcfed~mv2.png/v1/crop/x_0,y_667,w_3508,h_1182/fill/w_928,h_312,al_c,q_85,usm_0.66_1.00_0.01/beyaz-01-01.webp",
+            new Button("Website")),
         textField,
         comboBox,
         new Button("Send", event -> {
